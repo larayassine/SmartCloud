@@ -82,17 +82,10 @@ button {
   line-height: 1.1;
 }
 
-.services {
-  background-color: #213bb0;
-  border-top-left-radius: 56px;
-  border-top-right-radius: 56px;
-  height: 570px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
 .service_flex {
+
+
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -104,13 +97,24 @@ button {
   margin: 2% 0%;
   font-weight: 600;
 }
-.service1,
-.service2,
-.service3 {
+.container{
+    background-color: #213bb0;
+      height: 570px;
+          padding:5%;
+     border-top-left-radius: 56px;
+  border-top-right-radius: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.service1 {
   background-color: white;
   padding: 24px 30px 24px 30px;
-  height: 380px;
+  height: 400px;
   width: 450px;
+  font-size: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -166,4 +170,111 @@ footer ul li {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+@media (max-width: 768px) {
+
+  *{
+    font-size: 13px;
+  }
+  .hero h1{
+    margin-top: 20px;
+    font-size:17px;
+    align-items: center;
+  }
+  
+  .container{
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    padding:10%;
+    height: auto;
+  }
+  .service_flex{
+    flex-direction: column;
+    gap:20px;
+  }
+.service1{
+  height: auto;
+  width:100%;
+}
+#services_title{
+  font-size:18px;
+
+}
+header{
+  flex-direction: column;
+  gap:15px;
+  align-items: center;
+}
+  .nav{ 
+    flex-wrap:wrap;
+    gap:10px;
+  }
+   .hero{ 
+    flex-wrap:wrap;
+    gap:10px;
+   
+  }
+  .hero img{ 
+    height: auto;
+    width: 100%;
+  }
+
+.footer_flex{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+header, .nav{
+  flex-direction: column;
+  gap:15px;
+  align-items: center;
+  margin-bottom: 5%;
+}
+.logo{
+  justify-content: center;
+}
+
+.hero{
+flex-direction: column;
+  gap:10px;
+  justify-content: center;
+  align-items: center;
+}
+.hero_text{
+    font-size: 13px;
+}
+.hero h1{
+  font-size: 15px;
+}
+.hero img{
+  height:400px;
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    padding:10%;
+    height: auto;
+  }
+  .service_flex{
+    flex-direction: column;
+    gap:20px;
+  }
+
+  .footer_flex{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer_sec1{
+    margin-bottom: 10%;
+  }
 }
